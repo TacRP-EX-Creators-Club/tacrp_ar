@@ -4,13 +4,13 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "VLTOR AR-15 SBR"
+SWEP.PrintName = "VLTOR SBR"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Aftermarket AR-15 with a unique handguard and auto sear. Short barrel and vertical grip allows the weapon to excel at close range."
+SWEP.Description = "AR pattern rifle with a unique piggyback-style handguard. Short barrel and vertical grip allows the weapon to excel at close range."
 
 // https://gamebanana.com/mods/210206
 SWEP.ViewModel = "models/weapons/tacint_extras/v_vltor.mdl"
