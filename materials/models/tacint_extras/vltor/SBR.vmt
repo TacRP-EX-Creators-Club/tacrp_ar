@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	"$baseTexture" "models\weapons\SBR\SBR"
+	"$bumpmap"     "models\weapons\SBR\SBR_normal"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$phong" 		"1"
+	"$phongexponent" 	"36"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[1 0.75 3]"
+	"$phongalbedotint" "1"
+}
