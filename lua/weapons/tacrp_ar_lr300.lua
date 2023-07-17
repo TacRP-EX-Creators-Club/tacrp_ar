@@ -4,32 +4,52 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "VLTOR SBR"
+SWEP.PrintName = "Z-M LR-300"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "AR pattern rifle with a unique piggyback-style handguard. Short barrel and vertical grip allows the weapon to excel at close range."
+SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high mobility and fire rate, but stability is subpar."
 
-// https://gamebanana.com/mods/210206
-SWEP.ViewModel = "models/weapons/tacint_extras/v_vltor.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_vltor.mdl"
+SWEP.ViewModel = "models/weapons/tacint_extras/v_lr300.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_lr300.mdl"
 
 SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 21,
+        Damage_Max = 19,
         Damage_Min = 12,
+        RPM = 950,
 
-        MoveSpeedMult = 0.88,
-        ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 0.85,
+        MoveSpeedMult = 0.9,
+        ShootingSpeedMult = 0.85,
+        SightedSpeedMult = 0.9,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
+        Damage_Max = 15,
+        Damage_Min = 12,
+        Range_Min = 500,
+        Range_Max = 2800,
+
+        HipFireSpreadPenalty = 0.03,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 3,
+            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 0.9,
+            [HITGROUP_RIGHTARM] = 0.9,
+            [HITGROUP_LEFTLEG] = 0.75,
+            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_GEAR] = 0.9
+        },
+
+        ReloadTimeMult = 1.35,
+
         MoveSpeedMult = 0.925,
         ShootingSpeedMult = 0.8,
         MeleeSpeedMult = 1,
@@ -37,8 +57,9 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.75,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 13,
-        Damage_Min = 5,
+        Damage_Max = 7,
+        Damage_Min = 4,
+        RPM = 950,
 
         MoveSpeedMult = 0.88,
         ShootingSpeedMult = 0.8,
@@ -48,19 +69,19 @@ SWEP.BalanceStats = {
     },
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
+SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 24
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2600 // distance at which we drop to minimum damage
+SWEP.Damage_Max = 16
+SWEP.Damage_Min = 9
+SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.65
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4.75,
+    [HITGROUP_HEAD] = 5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.3,
     [HITGROUP_LEFTARM] = 1,
@@ -70,7 +91,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 18000
+SWEP.MuzzleVelocity = 20000
 
 // misc. shooting
 
@@ -79,43 +100,42 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 750
+SWEP.RPM = 900
 
-SWEP.Spread = 0.008
+SWEP.Spread = 0.0075
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.12 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 24
+SWEP.RecoilMaximum = 12
+SWEP.RecoilResetTime = 0.15 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 4
+SWEP.RecoilKick = 4.5
 SWEP.RecoilStability = 0.4
 
-SWEP.RecoilSpreadPenalty = 0.0016
-SWEP.HipFireSpreadPenalty = 0.02
-
+SWEP.RecoilSpreadPenalty = 0.0028
+SWEP.HipFireSpreadPenalty = 0.03
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
-SWEP.ShootingSpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.7
+SWEP.MoveSpeedMult = 0.95
+SWEP.ShootingSpeedMult = 0.85
+SWEP.SightedSpeedMult = 0.75
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.34
-SWEP.SprintToFireTime = 0.36
+SWEP.AimDownSightsTime = 0.37
+SWEP.SprintToFireTime = 0.35
 
-SWEP.Sway = 0.9
+SWEP.Sway = 0.85
 SWEP.ScopedSway = 0.2
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 3.75
 
 // hold types
 
@@ -127,7 +147,7 @@ SWEP.GestureShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.GestureReload = ACT_HL2MP_GESTURE_RELOAD_SMG1
 
 SWEP.PassiveAng = Angle(0, 0, 0)
-SWEP.PassivePos = Vector(0, -5, -5.5)
+SWEP.PassivePos = Vector(0, -4, -6)
 
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(0, -4, -3)
@@ -135,8 +155,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-1.025, -1.1, 1)
-SWEP.SightPos = Vector(-4.79, -9, -3.7)
+SWEP.SightAng = Angle(-1.04, -1.75, 1)
+SWEP.SightPos = Vector(-4.84, -7.5, -4)
 
 SWEP.CorrectivePos = Vector(0.5, 0, -0.55)
 SWEP.CorrectiveAng = Angle(2.4, 0.34, 0)
@@ -148,10 +168,10 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 // reload
 
-SWEP.ClipSize = 30
+SWEP.ClipSize = 34
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.1
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/pdw.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
@@ -160,12 +180,13 @@ SWEP.DropMagazineTime = 0.45
 
 // sounds
 
-local path1 = "tacint_extras/vltor/"
+local path = "TacRP/weapons/pdw/"
+local path1 = "tacint_extras/lr300/"
 
-SWEP.Sound_Shoot = "^" .. path1 .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "m4a1_unsil-1.wav"
+SWEP.Sound_Shoot_Silenced = path1 .. "m4a1-1.wav"
 
-SWEP.Vol_Shoot = 115
+SWEP.Vol_Shoot = 130
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -197,8 +218,6 @@ SWEP.EjectEffect = 2
 // blind_fire1, blind_fire2...
 // blind_dryfire
 
-SWEP.LastShot = true
-
 // WM:
 // attack1
 SWEP.AnimationTranslationTable = {
@@ -208,21 +227,26 @@ SWEP.AnimationTranslationTable = {
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
     ["fire5"] = "fire5_M",
-    ["melee"] = {"melee1", "melee2"},
-    ["deploy"] = "unholster",
+    ["melee"] = {"melee1", "melee2"}
 }
-
-SWEP.DeployTimeMult = 1.5
 
 // attachments
 
 SWEP.AttachmentElements = {
-    ["optic"] = {
+    ["foldstock"] = {
         BGs_VM = {
             {1, 1}
         },
         BGs_WM = {
             {1, 1}
+        }
+    },
+    ["optic"] = {
+        BGs_VM = {
+            {2, 1}
+        },
+        BGs_WM = {
+            {2, 1}
         },
     },
 }
@@ -236,9 +260,8 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
         VMScale = 1,
-        WMScale = 0.9,
-        Pos_VM = Vector(-5.4, -0.15, 6),
-        Pos_WM = Vector(8.25, 1.7, -6),
+        Pos_VM = Vector(-5.75, -0.15, 7),
+        Pos_WM = Vector(9.5, 0.85, -6.75),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
@@ -248,9 +271,8 @@ SWEP.Attachments = {
         Bone = "pdw_ROOT",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        WMScale = 0.9,
-        Pos_VM = Vector(-3.4, -0.1, 21.5),
-        Pos_WM = Vector(23.5, 2.5, -4.6),
+        Pos_VM = Vector(-3.45, -0.05, 25.5),
+        Pos_WM = Vector(27, 1.7, -4.8),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
@@ -260,15 +282,14 @@ SWEP.Attachments = {
         Bone = "pdw_ROOT",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
-        WMScale = 0.9,
-        Pos_VM = Vector(-3.4, 1, 11.5),
-        Pos_WM = Vector(14, 0.9, -4.5),
-        Ang_VM = Angle(90, 0, 90),
+        Pos_VM = Vector(-3.6, -1.65, 12.5),
+        Pos_WM = Vector(15.2, -0.25, -5),
+        Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -3.5, -90),
     },
     [4] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_sling", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle", "perk_extendedmag"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
@@ -308,7 +329,10 @@ local function addsound(name, spath)
 end
 
 
-addsound("tacint_vltor.clip_out", path1 .. "m4_magout.wav")
-addsound("tacint_vltor.clip_in", path1 .. "m4_magin_direct.wav")
-addsound("tacint_vltor.bolt_back", path1 .. "m4_boltback.wav")
-addsound("tacint_vltor.bolt_shut", path1 .. "m4_boltcatch.wav")
+addsound("tacint_extras_lr300.clip_out", path1 .. "m4a1_clipout.wav")
+addsound("tacint_extras_lr300.clip_in", path1 .. "m4a1_clipin.wav")
+addsound("tacint_extras_lr300.bolt_back", path1 .. "m4a1_boltpull.wav")
+addsound("tacint_extras_lr300.bolt_shut", path .. "bolt_shut-1.wav")
+addsound("tacint_extras_lr300.fire_select", path .. "fire_select-1.wav")
+addsound("tacint_extras_lr300.Buttstock_Flip_Open", path .. "buttstock_flip_open-1.wav")
+addsound("tacint_extras_lr300.Buttstock_lockdown", path .. "buttstock_lockdown-1.wav")

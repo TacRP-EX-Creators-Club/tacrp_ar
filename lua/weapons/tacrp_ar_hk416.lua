@@ -52,8 +52,8 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.6,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 9,
-        Damage_Min = 5,
+        Damage_Max = 12,
+        Damage_Min = 7,
         Range_Min = 800,
         Range_Max = 3200,
 
