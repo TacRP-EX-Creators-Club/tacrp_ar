@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Colt M16A1"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "An antique rifle recovered from the rice fields, complete with 20-round box magazines and fixed carry handle. Boasts high firing rate and good range, though don't expect this bucket of rust to run without a hitch or two."
@@ -22,6 +22,8 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 22,
         Damage_Min = 16,
+
+        JamFactor = 0.04,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -70,8 +72,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 11
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 10
 SWEP.Range_Min = 1600
 SWEP.Range_Max = 6000
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
@@ -101,7 +103,7 @@ SWEP.RPM = 900
 
 SWEP.Spread = 0.0055
 
-SWEP.JamFactor = 0.04
+SWEP.JamFactor = 0.05
 
 SWEP.ShootTimeMult = 0.4
 
