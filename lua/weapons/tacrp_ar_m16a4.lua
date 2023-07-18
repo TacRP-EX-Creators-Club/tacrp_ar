@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "Colt M16A4"
 SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Modern infantry rifle with modern afforances like a top rail and RIS handguard. Slightly lower damage than other rifles in the family, but has great accuracy and recoil control and non-runaway burst fire."
@@ -57,7 +57,7 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.65,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 9,
+        Damage_Max = 10,
         Damage_Min = 6,
 
         MoveSpeedMult = 0.85,
@@ -72,10 +72,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 20
-SWEP.Damage_Min = 14
+SWEP.Damage_Max = 21
+SWEP.Damage_Min = 15
 SWEP.Range_Min = 2000
-SWEP.Range_Max = 4500
+SWEP.Range_Max = 5000
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -99,7 +99,7 @@ SWEP.Firemodes = {
     1
 }
 SWEP.RunawayBurst = false
-SWEP.PostBurstDelay = 0.05
+SWEP.PostBurstDelay = 0.04
 
 SWEP.RPM = 750
 
@@ -174,7 +174,7 @@ SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/star15_stanag.mdl" // if anyone complains its not the same I'll break their nico nico kneecaps
+SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/m16a4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.3

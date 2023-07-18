@@ -72,7 +72,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
+SWEP.Damage_Max = 19
 SWEP.Damage_Min = 10
 SWEP.Range_Min = 1600
 SWEP.Range_Max = 6000
@@ -108,7 +108,7 @@ SWEP.JamFactor = 0.05
 SWEP.ShootTimeMult = 0.4
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 10
+SWEP.RecoilMaximum = 12
 SWEP.RecoilResetTime = 0.12
 SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
@@ -175,7 +175,7 @@ SWEP.ClipSize = 20
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1
-SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/star15_stanag.mdl" // if anyone complains its not the same I'll break their nico nico kneecaps
+SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/m16a1.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.3
