@@ -30,6 +30,13 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
+        Damage_Max = 14,
+        Damage_Min = 7,
+        Range_Min = 400,
+        Range_Max = 1800,
+
+        Spread = 0.01,
+
         MoveSpeedMult = 0.925,
         ShootingSpeedMult = 0.8,
         MeleeSpeedMult = 1,
