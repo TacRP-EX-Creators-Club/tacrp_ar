@@ -19,8 +19,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 19,
-        Damage_Min = 12,
+        Damage_Max = 18,
+        Damage_Min = 10,
         RPM = 950,
 
         MoveSpeedMult = 0.9,
@@ -75,7 +75,7 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 16
+SWEP.Damage_Max = 15
 SWEP.Damage_Min = 9
 SWEP.Range_Min = 2000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 6000 // distance at which we drop to minimum damage
@@ -135,7 +135,7 @@ SWEP.ReloadSpeedMult = 0.5
 SWEP.AimDownSightsTime = 0.37
 SWEP.SprintToFireTime = 0.35
 
-SWEP.Sway = 0.85
+SWEP.Sway = 1
 SWEP.ScopedSway = 0.2
 
 SWEP.FreeAimMaxAngle = 3.75
@@ -171,7 +171,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 // reload
 
-SWEP.ClipSize = 34
+SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1.1
