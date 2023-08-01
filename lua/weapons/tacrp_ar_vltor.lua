@@ -5,7 +5,7 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "VLTOR SBR"
-SWEP.Category = "Tactical RP" // "Tactical RP (Arctic)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
@@ -186,7 +186,6 @@ SWEP.MuzzleEffect = "muzzleflash_ak47"
 SWEP.EjectEffect = 2
 
 // anims
-
 // VM:
 // idle
 // fire
