@@ -13,7 +13,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 SWEP.Description = "Oddball AR pattern rifle with two barrels and two magazines firing two bullets simultaneously.  You get double the bullets but double the recoil and half the control, thanks to the awkward ergonomics."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_gilboa.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_vltor.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_gilboa.mdl"
 
 SWEP.Slot = 2
 
@@ -58,8 +58,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 24
-SWEP.Damage_Min = 14
+SWEP.Damage_Max = 18
+SWEP.Damage_Min = 7
 SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2600 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
@@ -81,6 +81,7 @@ SWEP.MuzzleVelocity = 18000
 // misc. shooting
 
 SWEP.Num = 2
+SWEP.NotShotgun = true
 
 SWEP.Firemode = 1
 
@@ -92,24 +93,24 @@ SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.12 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 24
+SWEP.RecoilResetTime = 0.15 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 20
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.4
+SWEP.RecoilKick = 5
+SWEP.RecoilStability = 0.25
 
-SWEP.RecoilSpreadPenalty = 0.0016
-SWEP.HipFireSpreadPenalty = 0.02
+SWEP.RecoilSpreadPenalty = 0.003
+SWEP.HipFireSpreadPenalty = 0.03
 
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.925
-SWEP.ShootingSpeedMult = 0.8
+SWEP.MoveSpeedMult = 0.9
+SWEP.ShootingSpeedMult = 0.75
 SWEP.SightedSpeedMult = 0.7
 
 SWEP.ReloadSpeedMult = 0.5
@@ -117,8 +118,8 @@ SWEP.ReloadSpeedMult = 0.5
 SWEP.AimDownSightsTime = 0.34
 SWEP.SprintToFireTime = 0.36
 
-SWEP.Sway = 0.9
-SWEP.ScopedSway = 0.2
+SWEP.Sway = 1
+SWEP.ScopedSway = 0.4
 
 SWEP.FreeAimMaxAngle = 4.5
 
@@ -159,7 +160,7 @@ SWEP.ClipSize = 60
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1.25
-SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/vltor.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/gilboa.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.35
@@ -243,28 +244,30 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "pdw_ROOT",
+		WMBone = "Box01",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
         VMScale = 1,
-        WMScale = 0.9,
+        WMScale = 1,
         Pos_VM = Vector(-5, 0.03, 5),
-        Pos_WM = Vector(8.25, 1.7, -6),
+        Pos_WM = Vector(0.75, 5, 0.25),
         Ang_VM = Angle(90, 0, 0),
-        Ang_WM = Angle(0, -3.5, 180),
+        Ang_WM = Angle(0, -87.5, 0),
     },
     [2] = {
         PrintName = "Tactical",
         Category = "tactical",
         Bone = "pdw_ROOT",
+		WMBone = "Box01",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         VMScale = 1.1,
         WMScale = 0.9,
         Pos_VM = Vector(-3.3, -1.6, 13),
-        Pos_WM = Vector(14, 0.9, -4.5),
+        Pos_WM = Vector(2.45, 10, -1.25),
         Ang_VM = Angle(90, 0, -90),
-        Ang_WM = Angle(0, -3.5, -90),
+        Ang_WM = Angle(0, -87.5, -90),
     },
     [3] = {
         PrintName = "Accessory",
