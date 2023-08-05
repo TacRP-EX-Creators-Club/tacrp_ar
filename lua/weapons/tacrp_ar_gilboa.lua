@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "Oddball AR pattern rifle with two barrels and two magazines firing two rounds simultaneously.  \nYou get double the bullets but double the recoil and poor control thanks to the awkward ergonomics."
+SWEP.Description = "Unique double-barrel AR, designed for heavy firepower in close-quarters.  It fires two shots with one trigger pull, but is very bulky and inaccurate at long range. \nCannot accept muzzle attachments for obvious reasons."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_gilboa.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_gilboa.mdl"
@@ -30,8 +30,6 @@ SWEP.BalanceStats = {
         Damage_Min = 5,
         Range_Min = 400,
         Range_Max = 1800,
-
-        Spread = 0.01,
 
         MoveSpeedMult = 0.925,
         ShootingSpeedMult = 0.8,
@@ -84,7 +82,7 @@ SWEP.Firemode = 1
 
 SWEP.RPM = 450
 
-SWEP.Spread = 0.008
+SWEP.Spread = 0.01
 
 SWEP.ShootTimeMult = 0.5
 
