@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "Oddball AR pattern rifle with two barrels and two magazines firing two bullets simultaneously.  You get double the bullets but double the recoil and half the control, thanks to the awkward ergonomics."
+SWEP.Description = "Oddball AR pattern rifle with two barrels and two magazines firing two rounds simultaneously.  \nYou get double the bullets but double the recoil and poor control thanks to the awkward ergonomics."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_gilboa.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_gilboa.mdl"
@@ -19,9 +19,6 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 21,
-        Damage_Min = 12,
-
         MoveSpeedMult = 0.88,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.85,
@@ -29,8 +26,8 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 14,
-        Damage_Min = 7,
+        Damage_Max = 10,
+        Damage_Min = 5,
         Range_Min = 400,
         Range_Max = 1800,
 
@@ -43,10 +40,10 @@ SWEP.BalanceStats = {
         ReloadSpeedMult = 0.75,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 13,
+        Damage_Max = 7,
         Damage_Min = 5,
 
-        MoveSpeedMult = 0.88,
+        MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.85,
         MeleeSpeedMult = 1,
@@ -60,10 +57,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 SWEP.Damage_Max = 18
 SWEP.Damage_Min = 7
-SWEP.Range_Min = 1100 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2600 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.65
+SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2200 // distance at which we drop to minimum damage
+SWEP.Penetration = 5 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.45
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4.75,
@@ -85,23 +82,23 @@ SWEP.NotShotgun = true
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 500
+SWEP.RPM = 450
 
 SWEP.Spread = 0.008
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.15 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 20
+SWEP.RecoilPerShot = 2
+SWEP.RecoilMaximum = 20
+SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 15
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 5
+SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.25
 
-SWEP.RecoilSpreadPenalty = 0.003
+SWEP.RecoilSpreadPenalty = 0.0014
 SWEP.HipFireSpreadPenalty = 0.03
 
 
@@ -109,14 +106,14 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.9
+SWEP.MoveSpeedMult = 0.8
 SWEP.ShootingSpeedMult = 0.75
 SWEP.SightedSpeedMult = 0.7
 
 SWEP.ReloadSpeedMult = 0.5
 
-SWEP.AimDownSightsTime = 0.34
-SWEP.SprintToFireTime = 0.36
+SWEP.AimDownSightsTime = 0.42
+SWEP.SprintToFireTime = 0.4
 
 SWEP.Sway = 1
 SWEP.ScopedSway = 0.4
@@ -219,7 +216,7 @@ SWEP.AnimationTranslationTable = {
     ["deploy"] = "unholster",
 }
 
-SWEP.DeployTimeMult = 1.5
+SWEP.DeployTimeMult = 1.6
 
 // attachments
 
