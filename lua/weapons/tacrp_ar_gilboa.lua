@@ -7,10 +7,10 @@ AddCSLuaFile()
 SWEP.PrintName = "Gilboa DBR SNAKE"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "5Sporter Carbine"
 
-SWEP.Description = "Unique double-barrel AR, designed for heavy firepower in close-quarters.  It fires two shots with one trigger pull, but is very bulky and inaccurate at long range. \nCannot accept muzzle attachments for obvious reasons."
+SWEP.Description = "Unique double-barrel AR carbine. Twice the lethality as one barrel, but the design is bulky and inaccurate.\nCannot accept muzzle attachments for obvious reasons."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_gilboa.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_gilboa.mdl"
@@ -20,30 +20,34 @@ SWEP.Slot = 2
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         MoveSpeedMult = 0.88,
-        ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 0.85,
+        ShootingSpeedMult = 0.7,
+        SightedSpeedMult = 0.8,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 10,
-        Damage_Min = 5,
-        Range_Min = 400,
-        Range_Max = 1800,
+        Damage_Max = 16,
+        Damage_Min = 8,
+        Range_Min = 500,
+        Range_Max = 2000,
+        RPM = 180,
 
-        MoveSpeedMult = 0.925,
-        ShootingSpeedMult = 0.8,
+        MoveSpeedMult = 0.92,
+        ShootingSpeedMult = 0.75,
         MeleeSpeedMult = 1,
-        SightedSpeedMult = 0.55,
-        ReloadSpeedMult = 0.75,
+        SightedSpeedMult = 0.5,
+        ReloadSpeedMult = 0.65,
     },
     [TacRP.BALANCE_PVE] = {
-        Damage_Max = 7,
+        Damage_Max = 9,
         Damage_Min = 5,
+        RPM = 450,
 
-        MoveSpeedMult = 0.85,
-        ShootingSpeedMult = 0.8,
-        SightedSpeedMult = 0.85,
+        RecoilSpreadPenalty = 0.0022,
+
+        MoveSpeedMult = 0.88,
+        ShootingSpeedMult = 0.7,
+        SightedSpeedMult = 0.8,
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
@@ -53,8 +57,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
-SWEP.Damage_Min = 7
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 12
 SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
 SWEP.Range_Max = 2200 // distance at which we drop to minimum damage
 SWEP.Penetration = 5 // units of metal this weapon can penetrate
@@ -80,23 +84,23 @@ SWEP.NotShotgun = true
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 450
+SWEP.RPM = 400
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0.012
 
 SWEP.ShootTimeMult = 0.5
 
-SWEP.RecoilPerShot = 2
-SWEP.RecoilMaximum = 20
-SWEP.RecoilResetTime = 0.2 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 15
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMaximum = 8
+SWEP.RecoilResetTime = 0.15 // time after you stop shooting for recoil to start dissipating
+SWEP.RecoilDissipationRate = 24
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 6
 SWEP.RecoilStability = 0.25
 
-SWEP.RecoilSpreadPenalty = 0.0014
+SWEP.RecoilSpreadPenalty = 0.0025
 SWEP.HipFireSpreadPenalty = 0.03
 
 
@@ -104,14 +108,14 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.8
-SWEP.ShootingSpeedMult = 0.75
-SWEP.SightedSpeedMult = 0.7
+SWEP.MoveSpeedMult = 0.85
+SWEP.ShootingSpeedMult = 0.55
+SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
 
 SWEP.AimDownSightsTime = 0.42
-SWEP.SprintToFireTime = 0.4
+SWEP.SprintToFireTime = 0.44
 
 SWEP.Sway = 1
 SWEP.ScopedSway = 0.4
@@ -166,17 +170,19 @@ SWEP.DropMagazineTime = 0.45
 local path1 = "tacint_extras/gilboa/"
 
 SWEP.Sound_Shoot = "^" .. path1 .. "gilboasnake-1.wav"
---SWEP.Sound_Shoot_Silenced = path1 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 115
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
 
-// the .qc attachment for the muzzle
-SWEP.QCA_Muzzle = 1
-// ditto for shell
-SWEP.QCA_Eject = 2
+SWEP.EffectsAlternate = true
+SWEP.EffectsDoubled = true
+
+SWEP.QCA_MuzzleL = 1
+SWEP.QCA_MuzzleR = 2
+SWEP.QCA_EjectL = 3
+SWEP.QCA_EjectR = 4
 
 SWEP.MuzzleEffect = "muzzleflash_ak47"
 SWEP.EjectEffect = 2
@@ -224,14 +230,14 @@ SWEP.AttachmentElements = {
             {2, 1}
         },
     },
-	["foldstock"] = {
-		BGs_VM = {
-			{1, 1}
-		},
-		BGs_WM = {
-			{1, 1}
-		},
-	},
+    ["foldstock"] = {
+        BGs_VM = {
+            {1, 1}
+        },
+        BGs_WM = {
+            {1, 1}
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -239,7 +245,7 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "pdw_ROOT",
-		WMBone = "Box01",
+        WMBone = "Box01",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
@@ -254,7 +260,7 @@ SWEP.Attachments = {
         PrintName = "Tactical",
         Category = "tactical",
         Bone = "pdw_ROOT",
-		WMBone = "Box01",
+        WMBone = "Box01",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         VMScale = 1.1,
@@ -266,13 +272,13 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_sling", "acc_foldstock","acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_sling", "acc_foldstock2", "acc_duffle", "perk_extendedmag"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
     [4] = {
         PrintName = "Bolt",
-        Category = {"bolt_automatic"},
+        Category = {"bolt_automatic", "bolt_gilboa"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
