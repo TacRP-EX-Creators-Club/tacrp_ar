@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "3Security"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high mobility and fire rate, but stability is subpar."
+SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high mobility and fire rate, but stability is subpar.\nThe \"300\" denotes the rifle's maximum effective range in meters."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_lr300.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_lr300.mdl"
@@ -70,6 +70,10 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        Spread = 0.008,
+        RecoilSpreadPenalty = 0.0024
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG

@@ -66,6 +66,12 @@ SWEP.BalanceStats = {
         MeleeSpeedMult = 1,
         ReloadSpeedMult = 1,
     },
+    [TacRP.BALANCE_OLDSCHOOL] = {
+        Description = "An antique rifle recovered from the rice fields, complete with 20-round box magazines and fixed carry handle. Boasts high firing rate and good range, but poor accuracy.",
+        JamFactor = 0,
+        HipFireSpreadPenalty = 0.008,
+        RecoilSpreadPenalty = 0.0032
+    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
