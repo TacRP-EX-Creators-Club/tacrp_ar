@@ -13,7 +13,7 @@ SWEP.SubCatType = "5Sporter Carbine"
 SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ar15pistol.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_ar15pistol.mdl"
 
 SWEP.Slot = 1
 
@@ -170,7 +170,7 @@ SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 0.9
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m4.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/m16a4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.3
@@ -236,7 +236,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 1,
         Pos_VM = Vector(-5.5, -0.05, 4),
-        Pos_WM = Vector(0.4, 3, 1.15),
+        Pos_WM = Vector(0.4, 3, 0.6),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),
     },
@@ -248,8 +248,9 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
         VMScale = 0.8,
+		WMScale = 0.8,
         Pos_VM = Vector(-3.94, -0.05, 16.4),
-        Pos_WM = Vector(1.4, 26, -0.5),
+        Pos_WM = Vector(1, 14, -1),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),
     },
@@ -261,10 +262,11 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         VMScale = 0.8,
+		WMScale = 0.8,
         Pos_VM = Vector(-4.6, -0.7, 9.5),
-        Pos_WM = Vector(2, 13, -0.5),
+        Pos_WM = Vector(1.25, 8, -0.4),
         Ang_VM = Angle(90, 0, -45),
-        Ang_WM = Angle(-90, -90 + 3.5, 0),
+        Ang_WM = Angle(-75, -90, 0),
     },
     [4] = {
         PrintName = "Accessory",
