@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.PrintName = "AR-15 Compact"
 SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 
-SWEP.SubCatTier = "4Civilian"
+SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
