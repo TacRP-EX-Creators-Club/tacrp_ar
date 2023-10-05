@@ -23,7 +23,7 @@ SWEP.BalanceStats = {
         Damage_Max = 22,
         Damage_Min = 16,
 
-        JamFactor = 0.04,
+        JamFactor = 0.035,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -36,6 +36,8 @@ SWEP.BalanceStats = {
         Damage_Min = 8,
         Range_Min = 600,
         Range_Max = 2800,
+
+        JamFactor = 0.035,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 3,
@@ -109,7 +111,7 @@ SWEP.RPM = 900
 
 SWEP.Spread = 0.0055
 
-SWEP.JamFactor = 0.05
+SWEP.JamFactor = 0.06
 
 SWEP.ShootTimeMult = 0.4
 

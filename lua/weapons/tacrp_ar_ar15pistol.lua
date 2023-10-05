@@ -22,6 +22,8 @@ SWEP.BalanceStats = {
         Damage_Max = 25,
         Damage_Min = 15,
 
+        RPM = 450,
+
         MoveSpeedMult = 0.95,
         ShootingSpeedMult = 0.8,
         SightedSpeedMult = 0.9,
@@ -96,7 +98,7 @@ SWEP.MuzzleVelocity = 20000
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 450
+SWEP.RPM = 400
 
 SWEP.Spread = 0.009
 
