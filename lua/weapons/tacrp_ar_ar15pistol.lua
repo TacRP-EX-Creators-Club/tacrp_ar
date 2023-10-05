@@ -8,7 +8,7 @@ SWEP.PrintName = "AR-15 Compact"
 SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "5Sporter Carbine"
+SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
 
@@ -19,7 +19,7 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 26,
+        Damage_Max = 25,
         Damage_Min = 15,
 
         MoveSpeedMult = 0.95,
@@ -69,21 +69,21 @@ SWEP.BalanceStats = {
     },
 }
 
-SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
+SWEP.TTTReplace = {["weapon_zm_mac10"] = 0.5}
 
 // "ballistics"
 
 SWEP.Damage_Max = 22
 SWEP.Damage_Min = 15
-SWEP.Range_Min = 1700
-SWEP.Range_Max = 3200
+SWEP.Range_Min = 900
+SWEP.Range_Max = 2000
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -96,7 +96,7 @@ SWEP.MuzzleVelocity = 20000
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 420
+SWEP.RPM = 450
 
 SWEP.Spread = 0.009
 
@@ -110,12 +110,12 @@ SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 6
+SWEP.RecoilKick = 5
 SWEP.RecoilStability = 0.15
 SWEP.RecoilAltMultiplier = 75
 
-SWEP.RecoilSpreadPenalty = 0.0038
-SWEP.HipFireSpreadPenalty = 0.022
+SWEP.RecoilSpreadPenalty = 0.0032
+SWEP.HipFireSpreadPenalty = 0.02
 SWEP.PeekPenaltyFraction = 0.2
 
 SWEP.CanBlindFire = true
@@ -134,7 +134,7 @@ SWEP.SprintToFireTime = 0.28
 SWEP.Sway = 1.1
 SWEP.ScopedSway = 0.3
 
-SWEP.FreeAimMaxAngle = 4.5
+SWEP.FreeAimMaxAngle = 3
 
 // hold types
 
@@ -180,11 +180,13 @@ SWEP.DropMagazineTime = 0.4
 
 local path = "TacRP/weapons/m4/m4_"
 local path2 = "tacrp_extras/m4a1/m4a1_"
+local path3 = "tacint_extras/ar15pistol/"
 
-SWEP.Sound_Shoot = "^" .. path2 .. "fire-1.wav"
+SWEP.Sound_Shoot = "^" .. path3 .. "fire-1.wav"
 SWEP.Sound_Shoot_Silenced = path2 .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 120
+SWEP.Pitch_Shoot = 105
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -206,7 +208,7 @@ SWEP.AnimationTranslationTable = {
     ["fire3"] = "fire3_M",
     ["fire4"] = "fire4_M",
     ["fire5"] = "fire5_M",
-    ["melee"] = {"melee1", "melee2"}
+    ["melee"] = {"melee1", "melee2"},
 }
 
 // attachments
@@ -222,7 +224,7 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.UnholsterTimeMult = 0.6
+SWEP.DeployTimeMult = 0.75
 
 
 SWEP.Attachments = {
@@ -248,7 +250,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
         VMScale = 0.8,
-		WMScale = 0.8,
+        WMScale = 0.8,
         Pos_VM = Vector(-3.94, -0.05, 16.4),
         Pos_WM = Vector(1, 14, -1),
         Ang_VM = Angle(90, 0, 0),
@@ -262,7 +264,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         VMScale = 0.8,
-		WMScale = 0.8,
+        WMScale = 0.8,
         Pos_VM = Vector(-4.6, -0.7, 9.5),
         Pos_WM = Vector(1.25, 8, -0.4),
         Ang_VM = Angle(90, 0, -45),
