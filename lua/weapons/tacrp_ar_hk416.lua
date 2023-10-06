@@ -23,6 +23,10 @@ SWEP.BalanceStats = {
         Damage_Min = 16,
 
         RecoilKick = 3,
+        RecoilStability = 0.55,
+
+        AimDownSightsTime = 0.4,
+        SprintToFireTime = 0.43,
 
         MoveSpeedMult = 0.82,
         ShootingSpeedMult = 0.7,
@@ -76,7 +80,7 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_OLDSCHOOL] = {
         RecoilSpreadPenalty = 0.0017,
         RecoilMaximum = 15,
-        ReloadTimeMult = 1.15
+        ReloadTimeMult = 1.15,
     }
 }
 
