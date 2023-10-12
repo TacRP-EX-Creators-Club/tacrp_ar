@@ -10,7 +10,20 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Sleek black rifle made as a competitior to the AR-15. Accurate and low recoil at the cost of some bulk.\n\nAn elite gun like this is all you need."
+SWEP.Description = "Sleek black rifle made as a competitior to the AR-15. Accurate and low recoil at the cost of some bulk."
+SWEP.Description_Quote = "An elite gun like this is all you need."
+
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Heckler & Koch"
+SWEP.Trivia_Year = "2004"
+
+SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Credits = [[
+Model: Twinke Masta, B0T, SoulSlayer
+Texture: Acid Snake, el maestro de graffiti, Antman
+Sounds: Vunsunta, xLongWayHome
+Animation: Tactical Intervention
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_hk416.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_hk416.mdl"

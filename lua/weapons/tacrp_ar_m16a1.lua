@@ -12,7 +12,18 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "An antique rifle recovered from the rice fields, complete with 20-round box magazines and fixed carry handle. Boasts high firing rate and good range, though don't expect this bucket of rust to run without a hitch or two."
 
-// https://gamebanana.com/mods/211832
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Colt"
+SWEP.Trivia_Year = "1969"
+
+SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Credits = [[
+Model: Hav0c
+Texture: Millenia
+Compile: The_AntiPirate
+Animation: Tactical Intervention
+]]
+
 SWEP.ViewModel = "models/weapons/tacint_extras/v_m16a1.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_m16a1.mdl"
 

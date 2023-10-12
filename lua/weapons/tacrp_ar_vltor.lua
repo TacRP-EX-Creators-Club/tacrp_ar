@@ -10,7 +10,18 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "AR pattern rifle with a unique piggyback-style handguard. Short barrel and vertical grip allows the weapon to excel at close range."
+SWEP.Description = "AR pattern carbine with a unique piggyback-style handguard. Short barrel and vertical grip allows the weapon to excel at close range."
+
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "VLTOR"
+SWEP.Trivia_Year = "2001" // Couldn't find this specific handguard, but it's dated between 2001-2009.
+
+SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Credits = [[
+Model/Textures: Kimono
+Sound: Teh Strelok
+Animation: Tactical Intervention
+]]
 
 // https://gamebanana.com/mods/210206
 SWEP.ViewModel = "models/weapons/tacint_extras/v_vltor.mdl"

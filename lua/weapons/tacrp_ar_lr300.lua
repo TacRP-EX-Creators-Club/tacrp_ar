@@ -12,6 +12,18 @@ SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high mobility and fire rate, but stability is subpar.\nThe \"300\" denotes the rifle's maximum effective range in meters."
 
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Z-M Weapons"
+SWEP.Trivia_Year = "2000"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = [[
+Model: HellSpike, TheLama; Compile: Inter
+Texture: Wannabe, Cyper, NC!Furious, SureShot
+Sound: NightmareMutant
+Animation: Tactical Intervention
+]]
+
 SWEP.ViewModel = "models/weapons/tacint_extras/v_lr300.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_lr300.mdl"
 
@@ -104,10 +116,15 @@ SWEP.MuzzleVelocity = 20000
 
 SWEP.Firemodes = {
     2,
+    -3,
     1
 }
 
 SWEP.RPM = 900
+
+SWEP.RPMMultBurst = 1.15
+SWEP.PostBurstDelay = 0.14
+SWEP.RunawayBurst = true
 
 SWEP.Spread = 0.0075
 

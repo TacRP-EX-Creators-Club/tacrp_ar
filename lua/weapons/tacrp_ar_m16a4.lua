@@ -10,7 +10,19 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Modern infantry rifle with modern afforances like a top rail and RIS handguard. Slightly lower damage than other rifles in the family, but has great accuracy and recoil control and non-runaway burst fire."
+SWEP.Description = "Modern infantry rifle with modern afforances like a top rail and RIS handguard. Slightly lower damage than other rifles in the family, but has great accuracy and recoil control, as well as an easier to use non-runaway burst fire."
+
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Colt"
+SWEP.Trivia_Year = "1987"
+
+SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Credits = [[
+Model: Twinke Masta, SureShot, vagrant
+Texture: Stoke, modderfreak
+Sound: Vunsunta, Navaro
+Animation: Tactical Intervention
+]]
 
 // https://gamebanana.com/mods/211832
 SWEP.ViewModel = "models/weapons/tacint_extras/v_m16a4.mdl"
@@ -256,7 +268,7 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         VMScale = 1,
-        Pos_VM = Vector(-5.5, -0.05, 5),
+        Pos_VM = Vector(-5.6, -0.05, 5),
         Pos_WM = Vector(0.45, 1, 0.9),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),

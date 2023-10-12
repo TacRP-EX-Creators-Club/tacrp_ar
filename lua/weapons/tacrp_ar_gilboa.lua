@@ -4,13 +4,23 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "Gilboa DBR SNAKE"
+SWEP.PrintName = "Gilboa DBR Snake"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "5Sporter Carbine"
 
 SWEP.Description = "Unique double-barrel AR carbine. Twice the lethality as one barrel, but the design is bulky and inaccurate.\nCannot accept muzzle attachments for obvious reasons."
+
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Silver Shadow"
+SWEP.Trivia_Year = "2015"
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = [[
+Assets: Counter Strike: Online 2
+Animation: Tactical Intervention
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_gilboa.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_gilboa.mdl"

@@ -5,12 +5,24 @@ AddCSLuaFile()
 
 // names and stuff
 SWEP.PrintName = "AR-15 Compact"
-SWEP.Category = "Tactical RP" // "Tactical RP (Extras)"
+SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Sidearm"
 
 SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
+
+SWEP.Trivia_Caliber = "5.56x45mm"
+SWEP.Trivia_Manufacturer = "Colt" // Who knows...?
+SWEP.Trivia_Year = "2012" // Could be literally anytime within the current century tbh
+
+SWEP.Faction = TacRP.FACTION_NEUTRAL
+SWEP.Credits = [[
+Model/Texture: Mateusz Woliński, Jordan Whincup
+Magazine: Twinke Masta
+Sound: Teh Strelok, Counter Strike: Online 2
+Animation: Tactical Intervention
+]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_ar15pistol.mdl"
 SWEP.WorldModel = "models/weapons/tacint_extras/w_ar15pistol.mdl"
@@ -100,7 +112,7 @@ SWEP.MuzzleVelocity = 20000
 SWEP.Firemode = 1
 SWEP.RPM = 400
 
-SWEP.Spread = 0.009
+SWEP.Spread = 0.01
 
 SWEP.ShootTimeMult = 0.5
 
@@ -133,10 +145,10 @@ SWEP.ReloadSpeedMult = 0.5
 SWEP.AimDownSightsTime = 0.25
 SWEP.SprintToFireTime = 0.28
 
-SWEP.Sway = 1.1
-SWEP.ScopedSway = 0.3
+SWEP.Sway = 1.25
+SWEP.ScopedSway = 0.55
 
-SWEP.FreeAimMaxAngle = 3
+SWEP.FreeAimMaxAngle = 4
 
 // hold types
 
