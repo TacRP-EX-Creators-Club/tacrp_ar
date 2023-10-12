@@ -12,11 +12,11 @@ ATT.SortOrder = 0
 ATT.Override_AmmoPerShot = 1
 ATT.Override_Num = 1
 
-ATT.Mult_RPM = 1.875
+ATT.Mult_RPM = 2
 
 ATT.Add_RecoilStability = 0.25
-ATT.Mult_RecoilKick = 0.5
-ATT.Mult_RecoilSpreadPenalty = 0.75
+ATT.Mult_RecoilKick = 0.45
+ATT.Mult_RecoilSpreadPenalty = 0.7
 ATT.Mult_Spread = 0.75
 
 ATT.Add_RecoilMaximum = 4
