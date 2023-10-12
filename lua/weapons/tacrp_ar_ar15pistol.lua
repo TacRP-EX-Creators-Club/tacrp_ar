@@ -20,7 +20,7 @@ SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
 Model/Texture: Mateusz Woliński, Jordan Whincup
 Magazine: Twinke Masta
-Sound: Teh Strelok, Counter Strike: Online 2
+Sound: Teh Strelok, Vunsunta, xLongWayHome, CS:O2
 Animation: Tactical Intervention
 ]]
 
@@ -31,7 +31,7 @@ SWEP.Slot = 1
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 25,
+        Damage_Max = 26,
         Damage_Min = 15,
 
         RPM = 450,
@@ -90,7 +90,7 @@ SWEP.TTTReplace = {["weapon_zm_mac10"] = 0.5}
 SWEP.Damage_Max = 22
 SWEP.Damage_Min = 15
 SWEP.Range_Min = 900
-SWEP.Range_Max = 2000
+SWEP.Range_Max = 2400
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -105,7 +105,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 20000
+SWEP.MuzzleVelocity = 13000
 
 // misc. shooting
 
@@ -117,18 +117,18 @@ SWEP.Spread = 0.01
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 8
+SWEP.RecoilMaximum = 7
 SWEP.RecoilResetTime = 0.12
 SWEP.RecoilDissipationRate = 10
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 
-SWEP.RecoilKick = 5
-SWEP.RecoilStability = 0.15
+SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.2
 SWEP.RecoilAltMultiplier = 75
 
-SWEP.RecoilSpreadPenalty = 0.0032
+SWEP.RecoilSpreadPenalty = 0.003
 SWEP.HipFireSpreadPenalty = 0.02
 SWEP.PeekPenaltyFraction = 0.2
 
@@ -197,7 +197,7 @@ local path2 = "tacrp_extras/m4a1/m4a1_"
 local path3 = "tacint_extras/ar15pistol/"
 
 SWEP.Sound_Shoot = "^" .. path3 .. "fire-1.wav"
-SWEP.Sound_Shoot_Silenced = path2 .. "fire_silenced-1.wav"
+SWEP.Sound_Shoot_Silenced = path3 .. "m4a1-1.wav"
 
 SWEP.Vol_Shoot = 120
 SWEP.Pitch_Shoot = 105
@@ -217,10 +217,10 @@ SWEP.EjectEffect = 2
 
 SWEP.AnimationTranslationTable = {
     ["fire_iron"] = "dryfire",
-    ["fire1"] = "fire1_M",
-    ["fire2"] = "fire2_M",
-    ["fire3"] = "fire3_M",
-    ["fire4"] = "fire4_M",
+    ["fire1"] = "fire2_M",
+    ["fire2"] = "fire3_M",
+    ["fire3"] = "fire4_M",
+    ["fire4"] = "fire5_M",
     ["fire5"] = "fire5_M",
     ["melee"] = {"melee1", "melee2"},
 }
