@@ -18,7 +18,7 @@ SWEP.Trivia_Year = "2001" // Couldn't find this specific handguard, but it's dat
 
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
-Model/Textures: Kimono
+Model/Texture: Kimono
 Sound: Teh Strelok
 Animation: Tactical Intervention
 ]]

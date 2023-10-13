@@ -21,7 +21,7 @@ SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[
 Model: Twinke Masta, B0T, SoulSlayer
 Texture: Acid Snake, el maestro de graffiti, Antman
-Sounds: Vunsunta, xLongWayHome
+Sound: Vunsunta, xLongWayHome
 Animation: Tactical Intervention
 ]]
 
