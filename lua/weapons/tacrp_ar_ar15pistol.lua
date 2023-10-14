@@ -13,7 +13,7 @@ SWEP.SubCatType = "1Sidearm"
 SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
 
 SWEP.Trivia_Caliber = "5.56x45mm"
-SWEP.Trivia_Manufacturer = "Colt" // Who knows...?
+SWEP.Trivia_Manufacturer = "Ultra-Tac" // Fake company. Sounds like the kind of company that would sell an AR-15 pistol
 SWEP.Trivia_Year = "2012" // Could be literally anytime within the current century tbh
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL

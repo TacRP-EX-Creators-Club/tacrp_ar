@@ -14,7 +14,7 @@ SWEP.Description = "Modern infantry rifle with modern afforances like a top rail
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Colt"
-SWEP.Trivia_Year = "1987"
+SWEP.Trivia_Year = "1997"
 
 SWEP.Faction = TacRP.FACTION_COALITION
 SWEP.Credits = [[

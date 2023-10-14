@@ -14,7 +14,7 @@ SWEP.Description = "An antique rifle recovered from the rice fields, complete wi
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Colt"
-SWEP.Trivia_Year = "1969"
+SWEP.Trivia_Year = "1967"
 
 SWEP.Faction = TacRP.FACTION_MILITIA
 SWEP.Credits = [[
