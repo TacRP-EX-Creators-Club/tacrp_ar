@@ -171,7 +171,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 60
+SWEP.ClipSize = 50
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1.25
@@ -288,7 +288,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_sling", "acc_foldstock2", "acc_duffle", "perk_extendedmag"},
+        Category = {"acc", "acc_sling", "acc_foldstock2", "acc_duffle"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
