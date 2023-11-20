@@ -221,7 +221,7 @@ SWEP.EjectEffect = 2
 // blind_fire1, blind_fire2...
 // blind_dryfire
 
-SWEP.LastShot = true
+SWEP.LastShot = false
 
 // WM:
 // attack1
