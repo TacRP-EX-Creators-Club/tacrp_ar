@@ -183,8 +183,8 @@ SWEP.HolsterAng = Angle(90, 0, 0)
 SWEP.ClipSize = 30
 SWEP.Ammo = "smg1"
 
-SWEP.ReloadTimeMult = 0.9
-SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/m16a4.mdl"
+SWEP.ReloadTimeMult = 1
+SWEP.DropMagazineModel = "models/weapons/tacint/magazines/m4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
 SWEP.ReloadUpInTime = 1.3
@@ -266,7 +266,7 @@ SWEP.Attachments = {
         VMScale = 0.8,
         WMScale = 0.8,
         Pos_VM = Vector(-3.94, -0.05, 16.4),
-        Pos_WM = Vector(1, 14, -1),
+        Pos_WM = Vector(1.1, 15.2, -1),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),
     },
