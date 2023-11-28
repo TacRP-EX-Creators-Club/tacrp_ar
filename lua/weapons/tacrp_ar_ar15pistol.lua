@@ -88,9 +88,9 @@ SWEP.TTTReplace = {["weapon_zm_mac10"] = 0.5}
 // "ballistics"
 
 SWEP.Damage_Max = 22
-SWEP.Damage_Min = 15
-SWEP.Range_Min = 900
-SWEP.Range_Max = 2400
+SWEP.Damage_Min = 12
+SWEP.Range_Min = 300
+SWEP.Range_Max = 1700
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -105,12 +105,12 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 13000
+SWEP.MuzzleVelocity = 17000
 
 // misc. shooting
 
 SWEP.Firemode = 1
-SWEP.RPM = 400
+SWEP.RPM = 450
 
 SWEP.Spread = 0.01
 

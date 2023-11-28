@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "Modern infantry rifle with modern afforances like a top rail and RIS handguard. Slightly lower damage than other rifles in the family, but has great accuracy and recoil control, as well as an easier to use non-runaway burst fire."
+SWEP.Description = "Modern infantry rifle with modern afforances like a top rail and RIS handguard. A well-rounded infantry weapon with good effective range."
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Colt"
@@ -32,9 +32,6 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 20,
-        Damage_Min = 16,
-
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
         SightedSpeedMult = 0.75,
@@ -88,10 +85,10 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 21
-SWEP.Damage_Min = 15
-SWEP.Range_Min = 2000
-SWEP.Range_Max = 5000
+SWEP.Damage_Max = 20
+SWEP.Damage_Min = 16
+SWEP.Range_Min = 1200
+SWEP.Range_Max = 4000
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -123,15 +120,17 @@ SWEP.Spread = 0.002
 
 SWEP.ShootTimeMult = 0.5
 
+SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.12
-SWEP.RecoilDissipationRate = 24
-SWEP.RecoilFirstShotMult = 0.75
+SWEP.RecoilMaximum = 10
+SWEP.RecoilResetTime = 0.01
+SWEP.RecoilDissipationRate = 35
+SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 0.75
 SWEP.RecoilKick = 3
 SWEP.RecoilStability = 0.65
+SWEP.RecoilAltMultiplier = 500
 
 SWEP.RecoilSpreadPenalty = 0.002
 SWEP.HipFireSpreadPenalty = 0.04

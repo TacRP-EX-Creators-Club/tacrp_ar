@@ -102,9 +102,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 24
-SWEP.Damage_Min = 16
-SWEP.Range_Min = 2000
-SWEP.Range_Max = 4000
+SWEP.Damage_Min = 15
+SWEP.Range_Min = 1200
+SWEP.Range_Max = 3200
 SWEP.Penetration = 8 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.775
 
@@ -114,8 +114,8 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
-    [HITGROUP_LEFTLEG] = 0.9,
-    [HITGROUP_RIGHTLEG] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
     [HITGROUP_GEAR] = 0.9
 }
 
