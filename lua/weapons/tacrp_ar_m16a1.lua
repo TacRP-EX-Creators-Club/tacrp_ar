@@ -285,7 +285,7 @@ SWEP.Attachments = {
     },
     [4] = {
         PrintName = "Bolt",
-        Category = {"bolt_automatic"},
+        Category = {"bolt_automatic", "bolt_m16a1"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
