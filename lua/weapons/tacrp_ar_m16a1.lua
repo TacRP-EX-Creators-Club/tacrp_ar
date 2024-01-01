@@ -10,8 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "An antique rifle recovered from the rice fields, complete with 20-round box magazines and fixed carry handle. Boasts high firing rate and good range, though don't expect this bucket of rust to run without a hitch or two."
-SWEP.Description_Quote = "Welcome to the jungle"
+SWEP.Description = "An antique rifle recovered from the rice fields.\nBoasts high firing rate and good range, though don't expect this bucket of rust to run without a hitch or two."
+SWEP.Description_Quote = "Welcome to the jungle."
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Colt"
