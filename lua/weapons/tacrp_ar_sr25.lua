@@ -10,20 +10,20 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "6Precision Rifle"
 
-SWEP.Description = "\"Enhanced Match Rifle\" made for precision shooting.\nLow capacity, but otherwise has excellent performance.\nEquipped with a 6x scope by default."
+SWEP.Description = "\"Enhanced Match Rifle\" made for precision shooting.\nLow capacity, but otherwise has excellent performance.\nEquipped with a 10x scope by default."
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Knight's Armament"
 SWEP.Trivia_Year = "1990"
 
-SWEP.Faction = TacRP.FACTION_COALITION
+SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
 Assets: Firearms: Source
 Animation: Tactical Intervention
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_extras/v_sr25.mdl"
-SWEP.WorldModel = "models/weapons/tacint_extras/w_m16a4.mdl"
+SWEP.WorldModel = "models/weapons/tacint_extras/w_sr25.mdl"
 
 SWEP.Slot = 2
 
@@ -32,7 +32,7 @@ SWEP.BalanceStats = {
         Damage_Max = 50,
         Damage_Min = 30,
 
-        RecoilKick = 6,
+        RecoilKick = 4.5,
 
         MoveSpeedMult = 0.8,
         ShootingSpeedMult = 0.6,
@@ -57,6 +57,8 @@ SWEP.BalanceStats = {
             [HITGROUP_RIGHTLEG] = 0.75,
             [HITGROUP_GEAR] = 0.9
         },
+
+        ReloadTimeMult = 1.4,
 
         MoveSpeedMult = 0.85,
         ShootingSpeedMult = 0.75,
@@ -85,7 +87,8 @@ SWEP.Damage_Min = 35
 SWEP.Range_Min = 1000
 SWEP.Range_Max = 6000
 SWEP.Penetration = 11 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.625
+SWEP.ArmorPenetration = 0.725
+SWEP.ArmorBonus = 1.5
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4,
@@ -115,13 +118,13 @@ SWEP.ShootTimeMult = 0.75
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMaximum = 4
-SWEP.RecoilResetTime = 0.01
+SWEP.RecoilResetTime = 0.015
 SWEP.RecoilDissipationRate = 12
-SWEP.RecoilFirstShotMult = 1
+SWEP.RecoilFirstShotMult = 0.75
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 4.5
-SWEP.RecoilStability = 0.55
+SWEP.RecoilKick = 3.5
+SWEP.RecoilStability = 0.65
 SWEP.RecoilAltMultiplier = 400
 
 SWEP.RecoilSpreadPenalty = 0.003
@@ -142,11 +145,11 @@ SWEP.SightedSpeedMult = 0.6
 
 SWEP.ReloadSpeedMult = 0.4
 
-SWEP.AimDownSightsTime = 0.43
-SWEP.SprintToFireTime = 0.5
+SWEP.AimDownSightsTime = 0.45
+SWEP.SprintToFireTime = 0.52
 
 SWEP.Sway = 2
-SWEP.ScopedSway = 0.125
+SWEP.ScopedSway = 0.12
 
 SWEP.FreeAimMaxAngle = 6.5
 
@@ -182,8 +185,8 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 // scope
 
 SWEP.Scope = true
-SWEP.ScopeOverlay = Material("tacrp/scopes/l96.png", "mips smooth") // Material("path/to/overlay")
-SWEP.ScopeFOV = 90 / 6
+SWEP.ScopeOverlay = Material("tacrp/scopes/sniper.png", "mips smooth") // Material("path/to/overlay")
+SWEP.ScopeFOV = 90 / 10
 SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
 
@@ -281,9 +284,9 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.BulletBodygroups = {
-    [1] = {5, 0},
+    [1] = {5, 2},
     [2] = {5, 1},
-    [3] = {5, 2},
+    [3] = {5, 0},
 }
 
 SWEP.Attachments = {
@@ -295,9 +298,9 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
-        VMScale = 1,
+        WMScale = 1.15,
         Pos_VM = Vector(-5.6, -0.05, 5),
-        Pos_WM = Vector(0.45, 1, 0.9),
+        Pos_WM = Vector(0.45, 2, 1.4),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),
     },
@@ -308,8 +311,8 @@ SWEP.Attachments = {
         WMBone = "Box01",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.9, 0, 33.75),
-        Pos_WM = Vector(1.7, 31, -0.9),
+        Pos_VM = Vector(-3.9, 0, 31),
+        Pos_WM = Vector(2, 33, -0.45),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -90 + 3.5, 0),
     },
