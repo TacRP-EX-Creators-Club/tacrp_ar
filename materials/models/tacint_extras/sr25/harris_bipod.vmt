@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\arc9_fas\view\accessories\Harris_Bipod"
+	"$baseTexture" "models\tacint_extras\sr25\Harris_Bipod"
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[.1 .1 .1]"
 	"$basemapalphaphongmask" 	"1"
