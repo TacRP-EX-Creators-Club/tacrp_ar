@@ -51,7 +51,7 @@ TacRP.LoadAtt(ATT, "bolt_m16a1")
 ATT = {}
 ATT.PrintName = "SR-25 Supp."
 ATT.FullName = "SR-25 Suppressor Shroud"
-ATT.Icon = Material("entities/tacrp_att_muzz_silencer.png", "mips smooth")
+ATT.Icon = Material("entities/tacrp_att_muzz_sr25.png", "mips smooth")
 ATT.Description = "Unique suppressor shroud that improves ballistics but lowers fire rate."
 ATT.Pros = {"stat.vol_shoot", "stat.recoil", "stat.range_min", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.rpm"}

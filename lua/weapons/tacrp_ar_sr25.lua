@@ -189,6 +189,7 @@ SWEP.ScopeOverlay = Material("tacrp/scopes/sniper.png", "mips smooth") // Materi
 SWEP.ScopeFOV = 90 / 10
 SWEP.ScopeLevels = 1 // 2 = like CS:S
 SWEP.ScopeHideWeapon = true
+SWEP.ScopeOverlaySize = 0.85
 
 // reload
 
