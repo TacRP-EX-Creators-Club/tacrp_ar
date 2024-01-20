@@ -61,8 +61,6 @@ SWEP.BalanceStats = {
             [HITGROUP_RIGHTLEG] = 0.75,
             [HITGROUP_GEAR] = 0.9
         },
-
-        ReloadTimeMult = 1.25,
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 12,
@@ -75,7 +73,6 @@ SWEP.BalanceStats = {
     [TacRP.BALANCE_OLDSCHOOL] = {
         RecoilSpreadPenalty = 0.0017,
         RecoilMaximum = 15,
-        ReloadTimeMult = 1.15,
     }
 }
 
