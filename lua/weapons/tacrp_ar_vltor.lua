@@ -11,6 +11,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "AR pattern carbine with a unique piggyback-style handguard. Short barrel and vertical grip allows the weapon to excel at close range."
+SWEP.Description_Quote = "\"Hustle up! Get to Whiskey Hotel!\""
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "VLTOR"
