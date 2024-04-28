@@ -8,7 +8,7 @@ SWEP.PrintName = "AR-15 Compact"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "4Consumer"
-SWEP.SubCatType = "1Sidearm"
+SWEP.SubCatType = "1Pistol"
 
 SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
 
