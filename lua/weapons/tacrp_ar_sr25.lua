@@ -8,7 +8,7 @@ SWEP.PrintName = "KAC SR-25 EMR"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "1Elite"
-SWEP.SubCatType = "7Sniper Rifle"
+SWEP.SubCatType = "6Marksman Rifle"
 
 SWEP.Description = "\"Enhanced Match Rifle\" made for precision shooting.\nLow capacity, but otherwise has excellent performance.\nEquipped with a 10x scope by default."
 

@@ -8,7 +8,7 @@ SWEP.PrintName = "Gilboa DBR Snake"
 SWEP.Category = "Tactical RP"
 
 SWEP.SubCatTier = "2Operator"
-SWEP.SubCatType = "5Sporter"
+SWEP.SubCatType = "9Sporter"
 
 SWEP.Description = "Unique double-barrel AR carbine. Twice the lethality as one barrel, but the design is bulky and inaccurate.\nCannot accept muzzle attachments for obvious reasons."
 
