@@ -17,12 +17,12 @@ ATT.Override_Num = 1
 
 ATT.Mult_RPM = 2
 
-ATT.Add_RecoilStability = 0.25
-ATT.Mult_RecoilKick = 0.45
-ATT.Mult_RecoilSpreadPenalty = 0.7
-ATT.Mult_Spread = 0.75
+ATT.Add_RecoilStability = 0.2
+ATT.Mult_RecoilKick = 0.7
+ATT.Mult_RecoilSpreadPenalty = 0.85
+ATT.Mult_Spread = 0.85
 
-ATT.Add_RecoilMaximum = 4
+ATT.Add_RecoilMaximum = 6
 
 ATT.Override_Sound_Shoot = "^tacint_extras/gilboa/t86-1.wav"
 ATT.Override_EffectsDoubled = false
