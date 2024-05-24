@@ -10,7 +10,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "AR pattern carbine with a unique piggyback-style handguard. Short barrel and vertical grip allows the weapon to excel at close range."
+SWEP.Description = "AR pattern carbine with a unique piggyback-style handguard. Excels at close range without giving up mid-range performance."
 SWEP.Description_Quote = "\"Hustle up! Get to Whiskey Hotel!\""
 
 SWEP.Trivia_Caliber = "5.56x45mm"
@@ -32,8 +32,9 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 21,
+        Damage_Max = 22,
         Damage_Min = 12,
+        RecoilKick = 5,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
@@ -85,21 +86,22 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 750
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.005
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
+SWEP.RecoilMaximum = 12
 SWEP.RecoilResetTime = 0.12 // time after you stop shooting for recoil to start dissipating
-SWEP.RecoilDissipationRate = 24
+SWEP.RecoilDissipationRate = 36
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 3.25
-SWEP.RecoilStability = 0.4
+SWEP.RecoilKick = 4
+SWEP.RecoilAltMultiplier = 500
+SWEP.RecoilStability = 0.5
 
-SWEP.RecoilSpreadPenalty = 0.0006
+SWEP.RecoilSpreadPenalty = 0.0015
 SWEP.HipFireSpreadPenalty = 0.02
 
 
