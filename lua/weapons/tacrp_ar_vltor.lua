@@ -231,6 +231,13 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.ProceduralIronFire = {
+    vm_pos = Vector(0, -1, -0.1),
+    vm_ang = Angle(0, 0.4, 0),
+    t = 0.25,
+    tmax = 0.25,
+}
+
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
