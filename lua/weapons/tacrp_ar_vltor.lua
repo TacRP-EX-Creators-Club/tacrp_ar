@@ -32,17 +32,32 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 22,
-        Damage_Min = 12,
+        Damage_Max = 24,
+        Damage_Min = 11,
         RecoilKick = 5,
+
+        RecoilAltMultiplier = 400,
+        HipFireSpreadPenalty = 0.02,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
         Damage_Min = 7,
         Range_Min = 400,
         Range_Max = 1800,
+        RPM = 750,
 
         Spread = 0.01,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 2.5,
+            [HITGROUP_CHEST] = 1.25,
+            [HITGROUP_STOMACH] = 1,
+            [HITGROUP_LEFTARM] = 0.9,
+            [HITGROUP_RIGHTARM] = 0.9,
+            [HITGROUP_LEFTLEG] = 0.75,
+            [HITGROUP_RIGHTLEG] = 0.75,
+            [HITGROUP_GEAR] = 0.9
+        },
     },
     [TacRP.BALANCE_PVE] = {
         Damage_Max = 13,
@@ -58,9 +73,9 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 // "ballistics"
 
 SWEP.Damage_Max = 25
-SWEP.Damage_Min = 14
-SWEP.Range_Min = 800 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
+SWEP.Damage_Min = 15
+SWEP.Range_Min = 700 // distance for which to maintain maximum damage
+SWEP.Range_Max = 2600 // distance at which we drop to minimum damage
 SWEP.Penetration = 7 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.65
 
@@ -75,7 +90,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 18000
+SWEP.MuzzleVelocity = 16000
 
 // misc. shooting
 
@@ -86,7 +101,7 @@ SWEP.Firemodes = {
 
 SWEP.RPM = 750
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0.008
 
 SWEP.ShootTimeMult = 0.5
 
@@ -98,11 +113,11 @@ SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
 SWEP.RecoilKick = 4
-SWEP.RecoilAltMultiplier = 500
+SWEP.RecoilAltMultiplier = 350
 SWEP.RecoilStability = 0.5
 
 SWEP.RecoilSpreadPenalty = 0.0015
-SWEP.HipFireSpreadPenalty = 0.02
+SWEP.HipFireSpreadPenalty = 0.015
 
 
 SWEP.CanBlindFire = true
