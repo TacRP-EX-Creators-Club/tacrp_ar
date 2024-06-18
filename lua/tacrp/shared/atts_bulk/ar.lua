@@ -40,7 +40,7 @@ ATT.Cons = {"stat.rpm", "stat.spread"}
 
 ATT.Category = "bolt_m16a1"
 
-ATT.SortOrder = 0
+ATT.SortOrder = 10
 
 ATT.Mult_RPM = 750 / 900
 ATT.Add_Spread = 0.0015
