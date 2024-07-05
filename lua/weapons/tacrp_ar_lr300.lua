@@ -8,7 +8,7 @@ SWEP.PrintName = "Z-M LR-300"
 SWEP.AbbrevName = "LR-300"
 SWEP.Category = "Tactical RP"
 
-SWEP.SubCatTier = "3Security"
+SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high mobility and fire rate, but stability is subpar.\nThe \"300\" denotes the rifle's maximum effective range in meters."
@@ -77,8 +77,8 @@ SWEP.Damage_Max = 15
 SWEP.Damage_Min = 10
 SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
 SWEP.Range_Max = 5000 // distance at which we drop to minimum damage
-SWEP.Penetration = 7 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.65
+SWEP.Penetration = 5 // units of metal this weapon can penetrate
+SWEP.ArmorPenetration = 0.6
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 5,
