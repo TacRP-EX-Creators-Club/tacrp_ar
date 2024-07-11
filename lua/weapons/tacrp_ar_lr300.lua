@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high mobility and fire rate, but stability is subpar.\nThe \"300\" denotes the rifle's maximum effective range in meters."
+SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high fire rate and range, but stability is subpar.\nThe \"300\" denotes the rifle's maximum effective range in meters."
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Z-M Weapons"
@@ -73,15 +73,15 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 15
+SWEP.Damage_Max = 16
 SWEP.Damage_Min = 10
-SWEP.Range_Min = 1500 // distance for which to maintain maximum damage
-SWEP.Range_Max = 5000 // distance at which we drop to minimum damage
+SWEP.Range_Min = 1200 // distance for which to maintain maximum damage
+SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 5 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.6
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 5,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.3,
     [HITGROUP_LEFTARM] = 1,
@@ -102,10 +102,9 @@ SWEP.Firemodes = {
 }
 
 SWEP.RPM = 850
-
 SWEP.RPMMultBurst = 1000 / 850
-SWEP.PostBurstDelay = 0.14
-SWEP.RunawayBurst = true
+SWEP.PostBurstDelay = 0.1
+SWEP.RunawayBurst = false
 
 SWEP.Spread = 0.0065
 
@@ -119,8 +118,8 @@ SWEP.RecoilDissipationRate = 30
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 4
-SWEP.RecoilStability = 0.25
+SWEP.RecoilKick = 6
+SWEP.RecoilStability = 0.2
 SWEP.RecoilAltMultiplier = 400
 
 SWEP.RecoilSpreadPenalty = 0.002
