@@ -2,6 +2,6 @@ VertexLitGeneric
 {
 	"$basetexture" "models\tacint_extras\lr300\F2"
 	"$bumpmap" "models\tacint_extras\lr300\F2_n"
-	"$envmapmask" "models\tacint_extras\lr300\F2_ref"
-	"$phong" 0
+	//"$envmapmask" "models\tacint_extras\lr300\F2_ref"
+	"$phong" 1
 }
