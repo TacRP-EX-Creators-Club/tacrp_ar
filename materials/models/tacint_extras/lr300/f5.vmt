@@ -1,4 +1,6 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models\tacint_extras\lr300\f5"
+	"$bumpmap" "models\tacint_extras\lr300\f5_n"
+	"$phong" 0
 }

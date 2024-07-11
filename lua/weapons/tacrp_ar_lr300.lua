@@ -19,8 +19,8 @@ SWEP.Trivia_Year = "2000"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
-Model: HellSpike, TheLama; Compile: Inter
-Texture: Wannabe, Cyper, NC!Furious, SureShot
+Model: TheLama
+Texture: Wannabe
 Sound: NightmareMutant
 Animation: Tactical Intervention
 ]]
@@ -162,10 +162,10 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(5, 0, -2)
 
-SWEP.SightAng = Angle(-1.04, -1.75, 1)
-SWEP.SightPos = Vector(-4.84, -7.5, -4)
+SWEP.SightAng = Angle(-1.05, -1.3, 1.)
+SWEP.SightPos = Vector(-4.87, -9, -4)
 
-SWEP.CorrectivePos = Vector(0.5, 0, -0.55)
+SWEP.CorrectivePos = Vector(0.46, 0, -0.47)
 SWEP.CorrectiveAng = Angle(2.4, 0.34, 0)
 
 SWEP.HolsterVisible = true
@@ -254,8 +254,8 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
         VMScale = 1,
-        Pos_VM = Vector(-5.75, -0.15, 7),
-        Pos_WM = Vector(9.5, 0.85, -6.75),
+        Pos_VM = Vector(-5.4, -0.1, 4),
+        Pos_WM = Vector(6.5, 0.6, -6),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
@@ -265,8 +265,8 @@ SWEP.Attachments = {
         Bone = "pdw_ROOT",
         AttachSound = "TacRP/weapons/silencer_on.wav",
         DetachSound = "TacRP/weapons/silencer_off.wav",
-        Pos_VM = Vector(-3.45, -0.05, 25.5),
-        Pos_WM = Vector(27, 1.7, -4.8),
+        Pos_VM = Vector(-3.45, 0.05, 25.5),
+        Pos_WM = Vector(27, 1.7, -4.5),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
@@ -276,8 +276,9 @@ SWEP.Attachments = {
         Bone = "pdw_ROOT",
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
-        Pos_VM = Vector(-3.6, -1.65, 12.5),
-        Pos_WM = Vector(15.2, -0.25, -5),
+		VMScale = 1.1,
+        Pos_VM = Vector(-3.45, -1, 17),
+        Pos_WM = Vector(19.5, 0.35, -4.6),
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, -3.5, -90),
     },
