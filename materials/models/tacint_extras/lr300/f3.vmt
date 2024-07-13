@@ -2,6 +2,13 @@ VertexLitGeneric
 {
 	"$basetexture" "models\tacint_extras\lr300\F3"
 	"$bumpmap" "models\tacint_extras\lr300\F3_n"
-	//"$envmapmask" "models\tacint_extras\lr300\F3_ref"
+	"$envmapmask" "models\tacint_extras\lr300\F3_ref"
+    "$normalmapalphaenvmapmask" "1"
+	$envmap env_cubemap
+	$envmaptint "[0.001 0.001 0.001]"
+	$halflambert 1
+	
 	"$phong" 1
+    "$phongboost" "0.05"
+    "$phongfresnelranges" "[1 4 7]"
 }
