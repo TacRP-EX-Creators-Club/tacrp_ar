@@ -33,7 +33,7 @@ SWEP.BalanceStats = {
         Damage_Max = 50,
         Damage_Min = 30,
 
-        RecoilKick = 4.5,
+        RecoilKick = 6,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 32,
@@ -63,18 +63,18 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.MarksmanRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 60
-SWEP.Damage_Min = 35
-SWEP.Range_Min = 1000
-SWEP.Range_Max = 6000
+SWEP.Damage_Max = 50
+SWEP.Damage_Min = 30
+SWEP.Range_Min = 500
+SWEP.Range_Max = 4500
 SWEP.Penetration = 11 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.725
 SWEP.ArmorBonus = 1.5
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 4,
+    [HITGROUP_HEAD] = 3.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.15,
+    [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -90,7 +90,8 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 300
+SWEP.RPM = 400
+SWEP.RPMMultSemi = 0.75
 
 SWEP.Spread = 0.0002
 
@@ -98,15 +99,15 @@ SWEP.ShootTimeMult = 0.75
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 4
+SWEP.RecoilMaximum = 3
 SWEP.RecoilResetTime = 0.015
 SWEP.RecoilDissipationRate = 12
-SWEP.RecoilFirstShotMult = 0.75
+SWEP.RecoilFirstShotMult = 0.8
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 3.5
+SWEP.RecoilKick = 5
 SWEP.RecoilStability = 0.65
-SWEP.RecoilAltMultiplier = 400
+SWEP.RecoilAltMultiplier = 300
 
 SWEP.RecoilSpreadPenalty = 0.003
 SWEP.HipFireSpreadPenalty = 0.06
@@ -115,19 +116,19 @@ SWEP.PeekPenaltyFraction = 0.2
 SWEP.CanBlindFire = true
 
 SWEP.Bipod = true
-SWEP.BipodRecoil = 0.5
-SWEP.BipodKick = 0.35
+SWEP.BipodRecoil = 0.25
+SWEP.BipodKick = 0.25
 
 // handling
 
 SWEP.MoveSpeedMult = 0.875
-SWEP.ShootingSpeedMult = 0.8
-SWEP.SightedSpeedMult = 0.6
+SWEP.ShootingSpeedMult = 0.5
+SWEP.SightedSpeedMult = 0.5
 
 SWEP.ReloadSpeedMult = 0.4
 
-SWEP.AimDownSightsTime = 0.45
-SWEP.SprintToFireTime = 0.52
+SWEP.AimDownSightsTime = 0.44
+SWEP.SprintToFireTime = 0.49
 
 SWEP.Sway = 2
 SWEP.ScopedSway = 0.12
@@ -177,7 +178,7 @@ SWEP.ScopeOverlaySize = 0.85
 SWEP.ClipSize = 10
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1.15
+SWEP.ReloadTimeMult = 1.2
 SWEP.DropMagazineModel = "models/weapons/tacint_extras/magazines/m16a4.mdl"
 SWEP.DropMagazineImpact = "metal"
 
