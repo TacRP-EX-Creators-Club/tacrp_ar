@@ -64,7 +64,7 @@ SWEP.Penetration = 5 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.45
 
 SWEP.BodyDamageMultipliers = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 4,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1.25,
     [HITGROUP_LEFTARM] = 1,
@@ -154,7 +154,7 @@ SWEP.HolsterAng = Angle(0, 0, 0)
 
 SWEP.AmmoPerShot = 2
 
-SWEP.ClipSize = 50
+SWEP.ClipSize = 60
 SWEP.Ammo = "smg1"
 
 SWEP.ReloadTimeMult = 1.25
