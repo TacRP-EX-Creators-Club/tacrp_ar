@@ -83,7 +83,8 @@ SWEP.NotShotgun = true
 
 SWEP.Firemode = 1
 
-SWEP.RPM = 400
+SWEP.RPM = 450
+SWEP.RPMMultSemi = 0.9
 
 SWEP.Spread = 0.012
 
@@ -96,8 +97,8 @@ SWEP.RecoilDissipationRate = 24
 SWEP.RecoilFirstShotMult = 1 // multiplier for the first shot's recoil amount
 
 SWEP.RecoilVisualKick = 1
-SWEP.RecoilKick = 6
-SWEP.RecoilStability = 0.25
+SWEP.RecoilKick = 4.5
+SWEP.RecoilStability = 0.35
 
 SWEP.RecoilSpreadPenalty = 0.0025
 SWEP.HipFireSpreadPenalty = 0.03
