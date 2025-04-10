@@ -11,6 +11,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "5Sporter"
 
 SWEP.Description = "Unique double-barrel AR carbine. Twice the lethality as one barrel, but the design is bulky and inaccurate.\nCannot accept muzzle attachments for obvious reasons."
+SWEP.Description_Quote = "Elevate Your AR 15 Experience." --From the Silver Shadow website
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Silver Shadow"

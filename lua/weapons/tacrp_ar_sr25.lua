@@ -12,6 +12,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "6Marksman Rifle"
 
 SWEP.Description = "\"Enhanced Match Rifle\" made for precision shooting.\nLow capacity, but otherwise has excellent performance.\nEquipped with a 10x scope by default."
+SWEP.Description_Quote = "I'm better when it's breathing." --American Sniper (2014)
 
 SWEP.Trivia_Caliber = "7.62x51mm"
 SWEP.Trivia_Manufacturer = "Knight's Armament"

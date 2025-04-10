@@ -12,6 +12,7 @@ SWEP.SubCatTier = "2Operator"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Modern infantry rifle with modern afforances like a top rail and RIS handguard. A well-rounded infantry weapon with good effective range."
+SWEP.Description_Quote = "\"Alpha Team... let 'em have all of it.\"" --The Incredible Hulk (2008)
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Colt"
