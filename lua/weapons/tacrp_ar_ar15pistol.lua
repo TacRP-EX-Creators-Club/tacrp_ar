@@ -10,7 +10,8 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "1Pistol"
 
-SWEP.Description = "Stockless, extremely short barrel AR-15 configuration.\nLegally a pistol and light enough to function as a sidearm, but it is unstable and imprecise without the form factor of a rifle."
+SWEP.Description = "Stockless, extremely short barreled AR-15 configuration.\nLegally defined as a pistol, it is unstable and imprecise without a proper barrel and stock."
+SWEP.Description_Quote = "At least it was cheap."
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Ultra-Tac" // Fake company. Sounds like the kind of company that would sell an AR-15 pistol

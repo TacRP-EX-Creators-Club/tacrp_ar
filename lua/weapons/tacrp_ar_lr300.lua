@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP"
 SWEP.SubCatTier = "4Consumer"
 SWEP.SubCatType = "4Assault Rifle"
 
-SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high fire rate and range, but stability is subpar.\nThe \"300\" denotes the rifle's maximum effective range in meters."
+SWEP.Description = "AR-derived \"Light Rifle\" with a modified gas system. Offers high fire rate and range with subpar stability. \nThe \"300\" denotes the rifle's max effective range in meters."
 SWEP.Description_Quote = "\"Make sure my eyes is closed, will ya?\"" -- Firefly (2002-2003) Episode: "The Message" (S1E12)
 
 SWEP.Trivia_Caliber = "5.56x45mm"
