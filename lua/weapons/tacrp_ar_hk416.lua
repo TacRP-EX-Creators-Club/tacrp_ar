@@ -12,7 +12,7 @@ SWEP.SubCatTier = "1Elite"
 SWEP.SubCatType = "4Assault Rifle"
 
 SWEP.Description = "Sleek black rifle made as a competitior to the AR-15. Accurate and low recoil at the cost of some bulk."
-SWEP.Description_Quote = "An elite gun like this is all you need."
+SWEP.Description_Quote = "\"The Devil's hands have been busy.\"" -- Terminator: Salvation
 
 SWEP.Trivia_Caliber = "5.56x45mm"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
