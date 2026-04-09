@@ -1,10 +1,14 @@
 local ATT
 
+------------------------------
+-- #region bolt_gilboa (Gilboa DBR ALternating Bolt)
+------------------------------
 ATT = {}
-ATT.PrintName = "Alternating"
-ATT.FullName = "Gilboa DBR Alternating Bolt"
+
+ATT.PrintName = "att.bolt_gilboa_alt.name"
+ATT.FullName = "att.bolt_gilboa_alt.name.full"
 ATT.Icon = Material("entities/tacrp_att_bolt_heavy.png", "mips smooth")
-ATT.Description = "Separated bolts that are able to fire alternatingly, somehow."
+ATT.Description = "att.bolt_gilboa_alt.desc"
 ATT.Pros = {"stat.spread", "rating.control", "stat.rpm"}
 ATT.Cons = {"att.procon.onebullet", "stat.recoilmaximum"}
 
@@ -29,32 +33,15 @@ ATT.Override_EffectsDoubled = false
 
 TacRP.LoadAtt(ATT, "bolt_gilboa_alt")
 
-
+------------------------------
+-- #region muzz_sr25 (SR-25 Suppressor Shroud/SR-25 Supp.)
+------------------------------
 ATT = {}
-ATT.PrintName = "att.bolt_refurbished.name"
-ATT.FullName = "att.bolt_refurbished.name.full"
-ATT.Icon = Material("entities/tacrp_att_bolt_refurbished.png", "mips smooth")
-ATT.Description = "att.bolt_refurbished.desc"
-ATT.Pros = {"att.procon.reliability"}
-ATT.Cons = {"stat.rpm", "stat.spread"}
 
-ATT.Category = "bolt_m16a1"
-
-ATT.SortOrder = 10
-
-ATT.Mult_RPM = 750 / 900
-ATT.Add_Spread = 0.0015
-ATT.Override_JamFactor = 0
-
-ATT.InvAtt = "bolt_refurbished"
-
-TacRP.LoadAtt(ATT, "bolt_m16a1")
-
-ATT = {}
-ATT.PrintName = "SR-25 Supp."
-ATT.FullName = "SR-25 Suppressor Shroud"
+ATT.PrintName = "att.muzz_sr25.name"
+ATT.FullName = "att.muzz_sr25.name.full"
 ATT.Icon = Material("entities/tacrp_att_muzz_sr25.png", "mips smooth")
-ATT.Description = "Unique suppressor shroud that improves ballistics but lowers fire rate."
+ATT.Description = "att.muzz_sr25.desc"
 ATT.Pros = {"stat.vol_shoot", "stat.recoil", "stat.range_min", "stat.muzzlevelocity"}
 ATT.Cons = {"stat.rpm"}
 
